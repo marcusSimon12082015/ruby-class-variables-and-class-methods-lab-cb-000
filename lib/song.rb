@@ -10,12 +10,8 @@ class Song
     @artist = artist
     @genre = genre
     @@count +=1
-    if !@@artists.include?(artist)
-      @@artists << artist
-    end
-    if !@@genres.include?(genre)
-      @@genres << genre
-    end
+    @@artists << artist
+    @@genres << genre
     if @@artist_count.key?(artist)
       @@artist_count[artist] =+1
     else
