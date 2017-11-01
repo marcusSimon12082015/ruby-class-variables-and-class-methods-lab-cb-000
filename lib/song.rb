@@ -27,4 +27,14 @@ class Song
       @@genre_count[genre] = 0
     end
   end
+  def self.count
+    @@count
+  end
+  def self.genres
+    @@genres
+  end
+  def self.artists
+    @@artists
+  end
+
 end
